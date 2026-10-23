@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For My Princess 💖</title>
+<style>
+:root{--b1:#fff0f5;--b2:#ffc2da;--card:rgba(255,255,255,.8);--ink:#4a1030;--ac:#e91e63;--chip:rgba(255,255,255,.7);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--b1:#2a0a1f;--b2:#5c1240;--card:rgba(255,255,255,.1);--ink:#ffe3ef;--ac:#ff5c9a;--chip:rgba(255,255,255,.14)}}
+:root[data-theme="dark"]{--b1:#2a0a1f;--b2:#5c1240;--card:rgba(255,255,255,.1);--ink:#ffe3ef;--ac:#ff5c9a;--chip:rgba(255,255,255,.14)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;background:linear-gradient(160deg,var(--b1),var(--b2)) fixed;color:var(--ink);font-family:Georgia,'Times New Roman',serif;text-align:center;overflow-x:hidden}
+.w{max-width:480px;margin:0 auto;padding:28px 18px 60px;position:relative;z-index:2}
+h1{font-size:2rem;margin:10px 0 4px}h2{font-size:1.4rem;margin:44px 0 10px}
+p.s{margin:0 0 18px;opacity:.8}
+button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:14px 26px;font-size:1.1rem;background:var(--ac);color:#fff;box-shadow:0 6px 18px rgba(233,30,99,.35);transition:transform .15s}
+button:active{transform:scale(.94)}
+#intro{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+#bigheart{font-size:7rem;background:none;box-shadow:none;padding:0;animation:beat 1.1s infinite}
+@keyframes beat{50%{transform:scale(1.18)}}
+#main{display:none}
+.card{background:var(--card);backdrop-filter:blur(8px);border-radius:24px;padding:28px 18px;min-height:150px;display:flex;align-items:center;justify-content:center;font-size:1.45rem;line-height:1.4;margin:16px 0 12px;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+.card.pop{animation:pop .5s}
+@keyframes pop{0%{transform:scale(.6) rotate(-4deg);opacity:0}70%{transform:scale(1.05)}100%{transform:none;opacity:1}}
+.sp{letter-spacing:.3em;word-break:break-all}
+.sp span{display:inline-block;white-space:pre;animation:wave 1.4s ease-in-out infinite}
+@keyframes wave{50%{transform:translateY(-8px);color:var(--ac)}}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px}
+.chips button{flex:none;padding:8px 14px;font-size:.9rem;background:var(--chip);color:var(--ink);box-shadow:none}
+.chips button.on{background:var(--ac);color:#fff}
+.cnt{font-size:.9rem;opacity:.7;margin-top:6px}
+.cd{display:flex;gap:8px;justify-content:center;margin-top:10px}
+.cd div{background:var(--card);border-radius:16px;padding:12px 6px;min-width:70px;font-size:.8rem}
+.cd b{display:block;font-size:1.8rem;color:var(--ac)}
+.bar{height:26px;border-radius:99px;background:var(--chip);overflow:hidden;margin:14px 0}
+#fill{height:100%;width:0;background:linear-gradient(90deg,#ff8fb8,var(--ac));transition:width .3s}
+.m img,.m video{width:100%;border-radius:20px;display:block;margin:12px 0;box-shadow:0 8px 30px rgba(0,0,0,.2)}
+#all{display:none;text-align:left;margin-top:12px;padding:0 6px 0 28px;line-height:1.8}
+#fg{margin-top:46px;padding-top:26px;border-top:1px dashed var(--ac);min-height:75vh}
+#no{margin-left:10px;background:var(--chip);color:var(--ink);box-shadow:none}
+#ov{display:none;position:fixed;inset:0;z-index:9;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px}
+#ov .card{background:var(--b1);flex-direction:column;max-width:420px;font-size:1.15rem}
+.h{position:fixed;pointer-events:none;z-index:5;user-select:none}
+.fl{bottom:-40px;animation:rise linear forwards;opacity:.7;z-index:1}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg)}}
+.bu{animation:fly 1.3s ease-out forwards}
+@keyframes fly{to{transform:translate(var(--x),var(--y)) scale(.4);opacity:0}}
+#dl{list-style:none;padding:0;margin:0;text-align:left}
+#dl li{background:var(--card);border-radius:14px;padding:11px 14px;margin:8px 0;display:flex;gap:10px;align-items:flex-start;font-size:1rem;line-height:1.4}
+#dl .bx{flex:none;width:22px;height:22px;border:2px solid var(--ac);border-radius:6px;display:grid;place-items:center;font-size:.85rem;color:#fff;margin-top:1px}
+#dl li.dn .bx{background:var(--ac)}#dl li.dn span{opacity:.7;text-decoration:line-through}
+h2{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 64px)}
+#nv{position:sticky;top:env(safe-area-inset-top,0px);z-index:4;display:flex;gap:8px;overflow-x:auto;margin:0 -18px 6px;padding:8px 18px;background:color-mix(in srgb,var(--b1) 80%,transparent);backdrop-filter:blur(8px)}
+#nv button{flex:none;padding:7px 13px;font-size:.85rem;background:var(--chip);color:var(--ink);box-shadow:none}
+#gate{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.shake{animation:sh .4s}@keyframes sh{25%{transform:translateX(-10px)}75%{transform:translateX(10px)}}
+</style></head><body>
+<div class="w">
+<div id="intro"><button id="bigheart" aria-label="Open">💖</button><h1>For my princess 👑</h1><p class="s">Tap the heart</p></div>
+<div id="main">
+<h1>Surprises for you <span id="key">💖</span></h1>
+<p class="s">Some hearts hide secrets 🤫</p>
+<nav id="nv"></nav>
+
+<h2 id="s1">Our 1 year anniversary 💍</h2>
+<p class="s">9 January 2027</p>
+<div class="cd" id="cd"></div>
+
+<h2 id="s2">Love messages 🎁</h2>
+<button id="go">Open a surprise ✨</button>
+<div class="card" id="card">Press the button 💌</div>
+<div class="chips" id="chips"></div>
+<div class="cnt" id="cnt"></div>
+
+<h2 id="s3">Reasons I love you 💝</h2>
+<button id="rs">Tap for a reason 💗</button>
+<div class="card" id="rc">Lots of reasons are waiting...</div>
+<div class="cnt" id="rcnt"></div>
+<p><button id="tg" style="background:var(--chip);color:var(--ink);box-shadow:none;font-size:.95rem;padding:10px 20px">See all</button></p>
+<ol id="all"></ol>
+
+<h2 id="s4">Love meter 💯</h2>
+<div class="bar"><div id="fill"></div></div>
+<div id="lv" class="cnt" style="font-size:1.1rem">0% 💗</div>
+<p><button id="lm">Tap to fill it 💘</button></p>
+
+<h2 id="s5">Our moments 📸</h2>
+<div class="m"><img src="photo.jpg" alt="Us"><video id="vid" src="video.mp4" autoplay muted loop playsinline preload="auto"></video></div>
+
+<h2 id="s6">Our dream list ✅</h2>
+<p class="s">Things we'll do together</p>
+<ul id="dl"></ul>
+<p><i style="font-size:.85rem;opacity:.75">This list refreshes every 7 days.</i></p>
+
+<h2 id="s7">Your name in the stars ✨</h2>
+<canvas id="st" style="width:100%;border-radius:20px;background:#0b0620;display:block"></canvas>
+<p class="s" style="margin-top:8px">Tap the sky ⭐</p>
+
+<h2 id="s8">Write me back 💌</h2>
+<p class="s">Tell me anything, and send it straight to me</p>
+<textarea id="wb" rows="4" placeholder="Write your message to my pringles..." style="width:100%;border-radius:18px;border:2px solid var(--ac);padding:12px;font:inherit;background:var(--card);color:var(--ink)"></textarea>
+<p><a id="wa" href="https://wa.me/2347082569509" target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none;border-radius:999px;padding:14px 26px;font-size:1.1rem;background:var(--ac);color:#fff;box-shadow:0 6px 18px rgba(233,30,99,.35)">Send to my pringles on WhatsApp 💌</a></p><p><button id="sb" style="background:var(--chip);color:var(--ink);box-shadow:none;font-size:.95rem;padding:10px 20px">Copy my message</button></p><div class="cnt" id="sm">Or message my pringles on WhatsApp: +234 708 256 9509</div>
+
+<div id="fg"><p>One last thing... do you want me to come and kiss you? 😘</p>
+<button id="yes">Yes please 💋</button><button id="no">No</button></div>
+</div></div>
+<div id="ov"><div class="card"><div>🔐 Secret unlocked 🔐</div><p>You found it, which means you're as curious about us as I am. In every language, in every way: you're my favorite person, my peace, my princess.</p><p class="sp" id="sx"></p><p>I'm still sorry for the nonsense 😂 Happy early anniversary, my love.</p><div>— Phantom 💖</div><p><button id="cl">Close 💕</button></p></div></div>
+<script>
+const L=["English","Igbo","Yoruba","Pidgin","French","Spanish","German","Italian","Russian","Portuguese","Swahili","Arabic","Chinese","Japanese","Korean","Hindi","Turkish","Dutch","Greek","Polish"];
+const E=["","👑","😍","🔥","🌹","🥺","💞","☀️","🤗","🙏","🕊️","💘"];
+const M=[
+["Iloveeeeyouuuuuuuu","Ahụrụ m gị n'anyaaaa","Mo nífẹ̀ẹ́ rẹẹẹẹẹ","I love you well wellll","Je t'aiiiimeeee","Te amooooooo","Ich liebe diiiiich","Ti amoooooo","Я тебя люблюююю","Eu te amooooo","Nakupendaaaaa","أحبك","我爱你你你你","愛してるるるる","사랑해요오오오","मैं तुमसे प्यार करता हूँ","Seni seviyoooorum","Ik hou van jouuuuu","Σε αγαπάωωωω","Kocham ciiiię"],
+["I'll love you forever, my princess","Aga m ahụ gị n'anya ruo mgbe ebighị ebi, eze nwanyị m","Èmi yóò fẹ́ ẹ títí láé, ọmọ ọba mi","I go love you forever, my princess","Je t'aimerai pour toujours, ma princesse","Te amaré para siempre, mi princesa","Ich werde dich für immer lieben, meine Prinzessin","Ti amerò per sempre, mia principessa","Я буду любить тебя вечно, моя принцесса","Vou te amar para sempre, minha princesa","Nitakupenda milele, binti mfalme wangu","سأحبك إلى الأبد يا أميرتي","我会永远爱你，我的公主","永遠に愛してる、私のお姫様","영원히 사랑할게, 나의 공주님","मैं तुम्हें हमेशा प्यार करूँगा, मेरी राजकुमारी","Seni sonsuza kadar seveceğim, prensesim","Ik zal altijd van je houden, mijn prinses","Θα σ' αγαπώ για πάντα, πριγκίπισσά μου","Będę cię kochać na zawsze, moja księżniczko"],
+["Geraldine is the prettiest girl in the world","Geraldine bụ nwa agbọghọ kasị mma n'ụwa niile","Geraldine ni ọmọbìnrin tó rẹwà jù lọ láyé","Geraldine na the finest girl for the whole world","Geraldine est la plus belle fille du monde","Geraldine es la chica más hermosa del mundo","Geraldine ist das schönste Mädchen der Welt","Geraldine è la ragazza più bella del mondo","Джеральдин — самая красивая девушка в мире","Geraldine é a garota mais linda do mundo","Geraldine ni msichana mrembo zaidi duniani","جيرالدين أجمل فتاة في العالم","Geraldine是世界上最美的女孩","Geraldineは世界一きれいな女の子","Geraldine은 세상에서 가장 예쁜 여자야","Geraldine दुनिया की सबसे खूबसूरत लड़की है","Geraldine dünyanın en güzel kızı","Geraldine is het mooiste meisje ter wereld","Η Geraldine είναι το πιο όμορφο κορίτσι στον κόσμο","Geraldine to najpiękniejsza dziewczyna na świecie"],
+["Chioma is very hot","Chioma dị ọkụ nke ukwuu","Chioma gbóná gan-an","Chioma hot die","Chioma est très canon","Chioma está muy buena","Chioma ist sehr heiß","Chioma è molto sexy","Чиома очень горячая","Chioma é muito gata","Chioma ni moto sana","تشيوما مثيرة جداً","Chioma非常性感","Chiomaはとてもセクシー","Chioma는 정말 섹시해","Chioma बहुत हॉट है","Chioma çok seksi","Chioma is superhot","Η Chioma είναι πολύ καυτή","Chioma jest bardzo gorąca"],
+["Phantom's babe is very beautiful","Nwanyị Phantom mara mma nke ukwuu","Olólùfẹ́ Phantom rẹwà gan-an","Phantom babe fine pass","La chérie de Phantom est très belle","La chica de Phantom es muy hermosa","Phantoms Schatz ist wunderschön","La ragazza di Phantom è bellissima","Девушка Phantom очень красивая","A namorada do Phantom é lindíssima","Mpenzi wa Phantom ni mrembo sana","حبيبة فانتوم جميلة جداً","Phantom的宝贝非常漂亮","Phantomの彼女はとても美しい","Phantom의 여자친구는 정말 아름다워","Phantom की जान बहुत खूबसूरत है","Phantom'un sevgilisi çok güzel","Phantoms schatje is erg mooi","Η αγάπη του Phantom είναι πολύ όμορφη","Dziewczyna Phantoma jest bardzo piękna"],
+["I'm sorry for being a nonsense boy sometimes","Ndo, m na-eme ihe efu mgbe ụfọdụ","Má bínú, mo máa ń ṣe ìwà ọ̀dájú nígbà míì","Abeg, sorry say I dey do nonsense sometimes","Pardon d'être parfois un idiot","Perdón por ser a veces un tonto","Tut mir leid, dass ich manchmal ein Idiot bin","Scusa se a volte sono uno sciocco","Прости, что иногда я веду себя глупо","Desculpa por às vezes ser um bobo","Samahani kwa kuwa mjinga wakati mwingine","آسف لأنني أكون أحياناً أحمق","对不起，我有时候很不懂事","時々ばかでごめんね","가끔 철없이 굴어서 미안해","माफ़ करना, मैं कभी-कभी बेवकूफ़ बन जाता हूँ","Bazen aptal olduğum için özür dilerim","Sorry dat ik soms een sukkel ben","Συγγνώμη που καμιά φορά είμαι χαζός","Przepraszam, że czasem bywam głupkiem"],
+["You're my favorite person on earth","Ị bụ onye m kacha hụ n'anya n'ụwa","Ìwọ ni ẹni tí mo fẹ́ jù láyé","You na my favourite person for this world","Tu es ma personne préférée sur terre","Eres mi persona favorita en el mundo","Du bist mein Lieblingsmensch auf der Welt","Sei la mia persona preferita al mondo","Ты мой самый любимый человек на земле","Você é minha pessoa favorita do mundo","Wewe ni mtu wangu ninayempenda zaidi duniani","أنتِ شخصي المفضل في هذا العالم","你是我在这世上最喜欢的人","あなたは世界で一番大切な人","너는 이 세상에서 내가 가장 좋아하는 사람이야","तुम दुनिया में मेरी सबसे प्यारी इंसान हो","Sen dünyadaki en sevdiğim insansın","Jij bent mijn favoriete mens ter wereld","Είσαι το αγαπημένο μου πρόσωπο στον κόσμο","Jesteś moją ulubioną osobą na świecie"],
+["You make my bad days good","Ị na-eme ka ụbọchị ọjọọ m dị mma","Ìwọ ni ò ń jẹ́ kí ọjọ́ burúkú mi dára","You dey make my bad days sweet","Tu rends mes mauvais jours meilleurs","Haces que mis días malos sean buenos","Du machst meine schlechten Tage gut","Rendi belli i miei giorni brutti","Ты делаешь мои плохие дни хорошими","Você torna meus dias ruins bons","Unafanya siku zangu mbaya ziwe nzuri","أنتِ تجعلين أيامي السيئة جميلة","你让我糟糕的日子变得美好","あなたがいると嫌な日も良い日になる","너는 나쁜 날도 좋은 날로 만들어","तुम मेरे बुरे दिनों को अच्छा बना देती हो","Kötü günlerimi iyi yapıyorsun","Jij maakt mijn slechte dagen goed","Κάνεις τις κακές μου μέρες καλές","Sprawiasz, że moje złe dni są dobre"],
+["I miss you even when I'm talking to you, hug me.","Ọ na-agụ m agụụ gị ọbụlagodi mgbe m na-agwa gị okwu, makụọ m","Mo ń ṣàárò rẹ paapaa nígbà tí mo bá ń bá ọ sọ̀rọ̀, gbà mí mọ́ra","I dey miss you even when I dey talk to you, hug me","Tu me manques même quand je te parle, fais-moi un câlin","Te extraño incluso cuando hablo contigo, abrázame","Ich vermisse dich, sogar wenn ich mit dir rede, umarm mich","Mi manchi anche quando parlo con te, abbracciami","Я скучаю по тебе, даже когда разговариваю с тобой, обними меня","Sinto sua falta até quando falo com você, me abraça","Nakukosa hata ninapozungumza nawe, nikumbatie","أشتاق إليكِ حتى وأنا أتحدث معكِ، عانقيني","就算在和你说话，我也想你，抱抱我","話している時でも会いたい、ぎゅってして","너랑 얘기할 때도 보고 싶어, 안아줘","तुमसे बात करते हुए भी तुम्हारी याद आती है, मुझे गले लगा लो","Seninle konuşurken bile özlüyorum, sarıl bana","Ik mis je zelfs als ik met je praat, knuffel me","Μου λείπεις ακόμα κι όταν σου μιλάω, αγκάλιασέ με","Tęsknię za tobą nawet gdy z tobą rozmawiam, przytul mnie"],
+["Thank you for putting up with me","Daalụ maka ndidi gị n'ebe m nọ","O ṣé tí o fi ń fara dà mí","Thank you say you dey bear with me","Merci de me supporter","Gracias por aguantarme","Danke, dass du mich aushältst","Grazie per sopportarmi","Спасибо, что терпишь меня","Obrigado por me aturar","Asante kwa kunivumilia","شكراً لأنكِ تتحملينني","谢谢你包容我","我慢してくれてありがとう","참아줘서 고마워","मुझे सहने के लिए शुक्रिया","Bana katlandığın için teşekkürler","Bedankt dat je me verdraagt","Ευχαριστώ που με ανέχεσαι","Dziękuję, że mnie znosisz"],
+["You're my peace","Ị bụ udo m","Ìwọ ni àlàáfíà mi","You be my peace","Tu es ma paix","Eres mi paz","Du bist mein Frieden","Sei la mia pace","Ты мой покой","Você é a minha paz","Wewe ni amani yangu","أنتِ سلامي","你是我的安宁","あなたは私の安らぎ","너는 나의 평화야","तुम मेरा सुकून हो","Sen benim huzurumsun","Jij bent mijn rust","Είσαι η γαλήνη μου","Jesteś moim spokojem"],
+["Will you be my Valentine every year?","Ị ga-abụ Valentine m kwa afọ?","Ṣé o máa jẹ́ Valentine mi ní ọdọọdún?","You go be my Valentine every year?","Veux-tu être ma Valentine chaque année ?","¿Serás mi San Valentín cada año?","Wirst du jedes Jahr meine Valentine sein?","Vuoi essere la mia Valentina ogni anno?","Будешь моей валентинкой каждый год?","Você será minha Valentine todo ano?","Utakuwa Valentine wangu kila mwaka?","هل ستكونين فالنتيني كل عام؟","你愿意每年都做我的情人节吗？","毎年、私のバレンタインでいてくれる？","매년 내 발렌타인이 되어줄래?","क्या तुम हर साल मेरी वैलेंटाइन बनोगी?","Her yıl benim sevgilim olur musun?","Wil je elk jaar mijn Valentijn zijn?","Θα είσαι η Βαλεντίνα μου κάθε χρόνο;","Czy będziesz moją walentynką co roku?"]
+];
+const R=["Your voice", "How smart you are", "You have sweet eyes", "Your hands (small, and I love it)", "Your face", "You make me smile", "Your personality", "Your hair", "You understand me", "You care about me so much", "You're concerned about my happiness", "Your good life choices", "Your laugh", "You care about us", "You believe in us", "You make me feel alive", "You protect me", "You remember things about me", "Your hugs (I only felt one once, but I love it)", "You let me cuddle", "Your lips", "How you handle things", "You love me", "You share everything with me", "How tender and sweet you are", "The deep connection between us, so interlinked", "The princess in you", "You spoil me with excess funds", "You're my entire life", "The way we hold hands (just once, but I love it)", "How smooth your skin is", "You always say good night", "You get prettier every day", "Your glow", "You always say I love you", "Your communication skills, 1000/100", "Seeing your face makes my day better.", "You're my peace.", "You understand me more than I understand myself.", "You complete my incomplete ideas (me: Can I touch them. LOML: suck them too)", "You love me in ways I never knew I needed.", "Your love feels so secure.", "You never make me feel weak.", "Your love feels so deep.", "The way you listen, even when I rant or crashout.", "Your heart is as beautiful as your face.", "You bring out the best in me.", "Your patience with me.", "The way you wipe away my tears fr", "You saved my life late 2025", "You never let me feel alone.", "Your love makes me believe in forever.", "You make me feel important.", "You're a good person fr", "The way you say my name or nna, I like itt", "You made my boring and chaotic life peaceful.", "You trust me.", "You remind me to love myself too.", "You laugh at my jokes and listen to all my yaps and long vns amidst unfavourable network conditions.", "You bring meaning to my life!!", "You make me feel seen and wanted", "The way you support me.", "You love me even when I'm crazy or mad.", "You never fail to gist me and update me about what's been going on.", "You never give up on me.", "You make the nights feel less lonely, I go to bed with a smile on my face", "You inspire me to be a better person.", "Your love gives me bragging rights.", "Song lyrics remind me of you.", "You always want to know what's going on with me.", "Your presence is the best gift I'll ask for. (In a few months, we unlock short distance and hangouts)", "I don't feel invisible again, I now know that I've got someone who cares.", "You know my unspoken words.", "You love me, not just my happiness.", "You never make me feel less.", "Your love makes life worth it. (Trying to get rich so I can get my princess anything she wants)", "You are my constant in an uncertain world (They do laugh when I say my babe is different but I stand my ground)", "You believe in me when I don't.", "Your love makes my heart leap.", "I smile whenever I'm texting you.", "Your love is a forever kind of thing (Like Messi and Antonella)", "I know you'll fit perfectly in my arms.", "You're finer and hotter than the sun", "You are my reason to believe in love.", "You are my always and forever.", "Loving you is my favorite feeling.", "Talking with you is my favourite thing to do (being with you will overtake it soon)", "You make life more beautiful.", "You bring hope to me. (I might be having a bad day because I lost money and I'll see your text and be like, I'm never giving up so I can take care of my princess)", "You're my favourite notification", "You're my addiction.", "You never let me feel replaceable.", "You make me crave you.", "You are the love story I always wanted.", "Your style.", "You make me emotional in the happiest way.", "You're all I want in life.", "You mean the whole world to me.", "You're my #1.", "You always think about me.", "I would choose you anywhere, anytime, anyday over anyone.", "You make me wanna try.", "How you take care of me.", "You make things up to me if you did something wrong.", "You're mine.", "You make me laugh.", "I love how we can talk about anything and anyone and everything.", "You understand me like no one else.", "You're an extraordinary human.", "Your honesty.", "Your little surprises.", "Your late night talks.", "The way you apologize.", "How you make things better.", "I enjoy your small details and talks.", "Your random texts.", "The way you miss me.", "My fear of losing you.", "Your voice notes.", "The way you look sleepy and tired. (There's this particular video, you were wearing real Madrid jersey)", "How you comfort me.", "The way you respect me.", "Your little jealous moments (I ended Tiktok streak with that girl her Tiktok name is \"Miness\" she's not mine please, you are. I ended snap streak with anybody with more streaks with me and my wife)", "Your shyness.", "Your soft heart.", "How you value small things.", "How you say \"I'm here.\" or \"Nna, I'm here\" or \"why are you screaming\"", "How you wait.", "How you explain calmly.", "The way you say \"I love you.\"", "The way you get emotional.", "The way you love music. (Please get Spotify)", "Your loyalty.", "Your growth.", "Your attention to me.", "Your stubbornness.", "You pray for me.", "How you love me despite everything.", "Your courage.", "The way you react to compliments.", "The way you express love.", "The way you talk about your day.", "The way you never get tired of talking with me.", "How you've changed me.", "The way you calm my anxiety. (\"Is that why you're stressing yourself nna? Block him, block her\")", "The way you still choose me.", "The way you laugh with your eyes.", "The way you ask if I've eaten.", "\"My pringles\"", "How you stay in my prayers.", "You make me smile without even trying.", "You always know how to brighten my day.", "I feel safe with you.", "You accept me for who I am.", "You always listen.", "You make me feel appreciated.", "You respect my opinions.", "You always make time for me.", "You inspire confidence in me.", "You always cheer me on.", "Your sense of humor.", "Your compassion.", "Your intelligence and broad knowledge", "I love your generosity. (How you always gift your friends on their birthday, that's very nice)", "You make me feel understood.", "You accept my imperfections.", "You make me feel valued.", "You are thoughtful.", "You make me feel loved every day."];
+const $=id=>document.getElementById(id);
+let cur=0,li=0,order=[],seen=new Set(),ro=[],rseen=new Set(),pct=0,kt=0;
+function burst(x,y,n=16,set=['💖','💕','💗','✨','🌹','💘']){
+ for(let k=0;k<n;k++){const e=document.createElement('span');e.className='h bu';e.textContent=set[k%set.length];
+ const a=Math.random()*6.28,d=60+Math.random()*130;
+ e.style.cssText+=`left:${x}px;top:${y}px;font-size:${18+Math.random()*18}px;--x:${Math.cos(a)*d}px;--y:${Math.sin(a)*d}px`;
+ document.body.appendChild(e);setTimeout(()=>e.remove(),1400);}
+}
+function gr(t){try{return[...new Intl.Segmenter().segment(t)].map(x=>x.segment)}catch(e){return[...t]}}
+function wave(c,t){c.innerHTML='';gr(t).forEach((ch,k)=>{const s=document.createElement('span');s.textContent=ch;s.style.animationDelay=(k*.08)+'s';c.appendChild(s)})}
+function render(pop){
+ const c=$('card'),w=cur==0&&li!=11&&li!=15;
+ c.dir=li==11?'rtl':'ltr';c.className='card'+(w?' sp':'');
+ if(w)wave(c,M[cur][li]);else c.textContent=M[cur][li]+(E[cur]?' '+E[cur]:'');
+ if(pop){void c.offsetWidth;c.classList.add('pop')}
+ document.querySelectorAll('#chips button').forEach((b,k)=>b.classList.toggle('on',k===li));
+ $('cnt').textContent=seen.size+' of '+M.length+' surprises opened 💝';
+}
+function ctr(e){const r=e.target.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2)}
+$('go').onclick=e=>{if(!order.length)order=[...M.keys()].sort(()=>Math.random()-.5);cur=order.pop();seen.add(cur);li=0;render(true);ctr(e)};
+L.forEach((n,k)=>{const b=document.createElement('button');b.textContent=n;b.onclick=ev=>{li=k;render(true);burst(ev.clientX,ev.clientY,6)};$('chips').appendChild(b)});
+$('rs').onclick=e=>{if(!ro.length)ro=[...R.keys()].sort(()=>Math.random()-.5);const i=ro.pop();rseen.add(i);
+ const c=$('rc');c.textContent=R[i]+' 💖';c.classList.remove('pop');void c.offsetWidth;c.classList.add('pop');
+ $('rcnt').textContent=rseen.size+' of '+R.length+' reasons found';ctr(e)};
+R.forEach(r=>{const l=document.createElement('li');l.textContent=r;$('all').appendChild(l)});
+$('tg').onclick=()=>{const a=$('all'),o=a.style.display=='block';a.style.display=o?'none':'block';$('tg').textContent=o?'See all '+R.length:'Hide list'};
+$('lm').onclick=e=>{pct=Math.min(100,pct+5+Math.floor(Math.random()*8));$('fill').style.width=pct+'%';
+ $('lv').textContent=pct<100?pct+'% 💗':'💯 It overflowed! Love level: 1000/100 💖';
+ burst(e.clientX,e.clientY,pct<100?6:30)};
+$('bigheart').onclick=e=>{burst(e.clientX,e.clientY,24);$('intro').style.display='none';$('main').style.display='block'};
+$('key').onclick=e=>{kt++;burst(e.clientX,e.clientY,4);if(kt>=5){kt=0;wave($('sx'),'Iloveeeeyouuuuuuuu');$('ov').style.display='flex';burst(innerWidth/2,innerHeight/2,40)}};
+$('cl').onclick=()=>$('ov').style.display='none';
+function tick(){const t=new Date(2027,0,9)-new Date();
+ if(t<=0){$('cd').textContent='Happy anniversary my love 💍🥰';return}
+ const v=[['days',Math.floor(t/864e5)],['hours',Math.floor(t/36e5)%24],['mins',Math.floor(t/6e4)%60],['secs',Math.floor(t/1e3)%60]];
+ $('cd').innerHTML=v.map(x=>`<div><b>${x[1]}</b>${x[0]}</div>`).join('')}
+tick();setInterval(tick,1000);
+const vid=$('vid');vid.muted=true;vid.onclick=()=>vid.paused?vid.play():vid.pause();
+const no=$('no');
+function dodge(e){e.preventDefault();no.style.position='fixed';no.style.zIndex=6;
+ no.style.left=(10+Math.random()*(innerWidth-90))+'px';no.style.top=(80+Math.random()*(innerHeight-160))+'px'}
+no.addEventListener('pointerenter',dodge);no.addEventListener('pointerdown',dodge);
+$('yes').onclick=e=>{burst(e.clientX,e.clientY,40);setTimeout(()=>burst(innerWidth/2,innerHeight/2,40),300);
+ $('fg').innerHTML='<h1>Coming for you, my love 😘</h1><div class="card sp" id="fin"></div>';wave($('fin'),'Iloveeeeyouuuuuuuu')};
+setInterval(()=>{const e=document.createElement('span');e.className='h fl';e.textContent=['💖','💕','🌸','💗'][Math.floor(Math.random()*4)];
+ e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*20)+'px';e.style.animationDuration=(6+Math.random()*5)+'s';
+ document.body.appendChild(e);setTimeout(()=>e.remove(),11500)},800);
+document.addEventListener('pointerdown',e=>{if(e.target.tagName!=='BUTTON'&&e.target.tagName!=='TEXTAREA'&&e.target.id!=='key')burst(e.clientX,e.clientY,6)});
+const D=["A Yes day", "Write each other love letters and read them out loud", "Take a walk without phones", "Matching keychain", "Doing it while you read me a book", "Take photo-booth strips together", "Travelling to a new state or city just to do it there and come back", "Dancing", "Bowling", "eyp with ice-cream", "Matching bios", "Carve our initials on a tree", "Make your hair", "Cinema date", "Make a memory jar together", "Go to a club or restaurant and do it in the restroom", "Amusement park or zoo day", "Doing it inside the car while it's raining", "Dance battle", "Baking together", "Feeding ourselves with our eyes closed", "Concert together", "Dinner date", "Surprise lingerie night", "Matching tattoos", "Breakfast in bed", "Stay in bed all day", "Swap-clothes day", "Matching pfps", "Shower together", "Rooftop dinner", "Play truth or dare or 20 questions", "Picnic date", "Do my blood test", "Doing it in the bathroom", "Spotify jam", "Sip and paint", "Pillow fight", "Kiss 100+ times in a day", "Doing it on the kitchen counter", "Matching bracelets", "Beach date", "Trying new hobbies", "Visit a garden", "Learn new skills together", "Wrapping your legs around my neck", "Arcade date", "Watch the sunset", "Movie marathon", "Train with practice swords", "Play instruments for you", "Stargazing night", "Doing it while cooking, so our stew will burn", "Plant something together", "Lick ice-cream with our hands, no spoons", "Split our Sprite", "Hotel staycation", "Doing it in the cinema while you hold your moan", "Christmas market", "Licking you", "Visit an art gallery", "Bath you", "Massage night with candles", "Go to a street market", "Matching outfits day", "Colour photography date", "Learn new languages together", "Read an erotic story together", "Play board games", "Kiss you from head to toe", "Read a book together", "Inventing our own cooking recipe", "Go to church together", "Answer Flamingo cards", "Cooking competition", "Game night", "Spa night", "Doing it with alcohol", "Couples workout challenge", "Road trip with no destination", "Go to a cafe and cause trouble", "Doing it in the back row of a cinema", "Recreate a viral reel", "Play tennis 🎾 together (I'll teach you)", "Doing it in an elevator", "Play hide and seek", "Going out to ragebait people", "Ice cream kisses", "Ice cream date", "Making playlists", "Face paint", "Fly kites"],DONE=["Matching pfps"];
+D.forEach(x=>{const l=document.createElement('li'),dn=DONE.includes(x);if(dn)l.className='dn';
+ l.innerHTML='<div class="bx">'+(dn?'✓':'')+'</div><span></span>';l.querySelector('span').textContent=x;$('dl').appendChild(l)});
+(function(){
+ const cv=$('st'),g=cv.getContext('2d'),W=cv.width=360,H=cv.height=170;
+ const o=document.createElement('canvas');o.width=W;o.height=H;const q=o.getContext('2d');
+ let fs=64;q.font='bold '+fs+'px Georgia,serif';
+ while(q.measureText('Geraldine').width>W-30){fs-=2;q.font='bold '+fs+'px Georgia,serif'}
+ q.textAlign='center';q.textBaseline='middle';q.fillText('Geraldine',W/2,H/2);
+ const d=q.getImageData(0,0,W,H).data,P=[];
+ for(let y=0;y<H;y+=4)for(let x=0;x<W;x+=4)if(d[(y*W+x)*4+3]>128)P.push({tx:x,ty:y,x:Math.random()*W,y:Math.random()*H,p:Math.random()*6});
+ const B=[...Array(50)].map(()=>({x:Math.random()*W,y:Math.random()*H,p:Math.random()*6}));
+ cv.onpointerdown=()=>P.forEach(s=>{s.x=Math.random()*W;s.y=Math.random()*H});
+ (function f(t){g.clearRect(0,0,W,H);g.fillStyle='#fff';
+  B.forEach(s=>{g.globalAlpha=.3+.3*Math.sin(t/600+s.p);g.fillRect(s.x,s.y,1.5,1.5)});
+  g.fillStyle='#ffe9a8';
+  P.forEach(s=>{s.x+=(s.tx-s.x)*.05;s.y+=(s.ty-s.y)*.05;g.globalAlpha=.6+.4*Math.sin(t/300+s.p);g.beginPath();g.arc(s.x,s.y,1.8,0,6.3);g.fill()});
+  requestAnimationFrame(f)})(0);
+})();
+const wa=$('wa'),wb=$('wb');const upd=()=>{wa.href='https://wa.me/2347082569509?text='+encodeURIComponent('💌 For my pringles:\n\n'+wb.value.trim())};wb.oninput=upd;wa.onclick=e=>{if(!wb.value.trim()){e.preventDefault();$('sm').textContent='Write something first 💗';return}upd();burst(e.clientX,e.clientY,20)};
+$('sb').onclick=async e=>{const t=$('wb').value.trim();
+ if(!t){$('sm').textContent='Write something first 💗';return}
+ const txt='💌 For my pringles:\n\n'+t;
+ 
+ 
+ try{await navigator.clipboard.writeText(txt);$('sm').textContent='Copied! Now paste it to my pringles in your chat 💕'}catch(x){$('sm').textContent='Copy your message and send it to my pringles 💕'}
+};
+[["💍","Countdown","s1"],["🎁","Messages","s2"],["💝","Reasons","s3"],["💯","Love meter","s4"],["📸","Moments","s5"],["✅","Dream list","s6"],["✨","Stars","s7"],["💌","Write back","s8"]].forEach(x=>{const b=document.createElement('button');b.textContent=x[0]+' '+x[1];b.onclick=()=>window.scrollTo({top:$(x[2]).getBoundingClientRect().top+window.pageYOffset-70,behavior:'smooth'});$('nv').appendChild(b)});
+
+</script></body></html>
